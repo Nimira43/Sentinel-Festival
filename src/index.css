@@ -79,6 +79,7 @@ ul {
   transition: var(--transition);
   text-transform: uppercase;
   display: inline-block;
+  outline: none;
 }
 
 .btn:hover {
@@ -114,6 +115,7 @@ ul {
   background: var(--primary);
   color: var(--light);
   border: none;
+  outline: none;
 }
 
 .form-row {
