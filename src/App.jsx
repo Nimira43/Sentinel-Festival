@@ -1,11 +1,12 @@
 import { useState } from 'react'
+import Form from './form'
 
 function App() {
 const [items, setItems] = useState([])
 
   return (
-    <section>
-      <h1>The Shopping List</h1>
+    <section className='section-centre'>
+      <Form />
     </section>
   )
 }
