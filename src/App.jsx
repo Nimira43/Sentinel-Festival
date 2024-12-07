@@ -1,6 +1,8 @@
 function App() {
   return (
-    <h1>The Shopping List</h1>
+    <div>
+      <h1>The Shopping List</h1>
+    </div>
   )
 }
 export default App
