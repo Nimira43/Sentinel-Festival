@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+[hidden],
+template {
+    display: none;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  background: transparent;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+dfn {
+  font-style: italic;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'League Spartan', sans-serif;
+    background-color: #261C25;
+    overflow: hidden;
+}
+
+canvas {
+    position: absolute;
+    opacity: .05;
+    z-index: -1;
+}
+
+#container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    user-select: none;
+    background-color: #185666;
+    box-shadow: 5px -5px 0px #103A45;
+    border: 4px solid #fff;
+    padding: 10px;
+    font-size: 40pt;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.button:hover {
+    background-color: #740a6a;
+    box-shadow: 5px -5px 0px #43053D;
+}
+
+.button:active {
+    background-color: #B30FA3;
+    box-shadow: 5px -5px 0px #68095F;
+}
+
+.flash {
+    animation: flash 1s ease-out infinite;
+}
+
+@keyframes flash {
+    0%, 100% { background-color: none; color: none; }
+    50% { background-color: #E6EA37; color: #111; }
+}
+
+#icons-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+
+#icons-top .left, #icons-top .right {
+    display: none;
+}
+
+#icons-top div {
+    cursor: pointer;
+    width: 54px;
+    height: 54px;
+    background-image: url('../media/img/UI.png');
+    background-size: cover;
+    transition: background-position 0.3s;
+}
+
+#icons-top .pause {
+    background-position: -54px 0;
+}
+
+#icons-top .pause.paused {
+    background-position: -216px 0;
+}
+
+#icons-top .pause.paused:hover {
+    background-position-y: -54px;
+}
+
+#icons-top .pause.paused:active {
+    background-position-y: -108px;
+}
+
+#icons-top .play {
+    background-position: -216px 0;
+}
+
+#icons-top .mute {
+    right: 85px;
+    background-position: -162px 0;
+}
+
+#icons-top .mute.muted {
+    background-position: -270px 0;
+}
+
+#icons-top .mute.muted:hover, #icons-top .music.muted:hover {
+    background-position-y: -54px;
+}
+
+#icons-top .mute.muted:active, #icons-top .music.muted:active {
+    background-position-y: -108px;
+}
+
+#icons-top .music {
+    right: 20px;
+    background-position: -378px 0;
+}
+
+#icons-top .music.muted {
+    background-position: -324px 0;
+}
+
+#icons-top .restart {
+    background-position: -108px 0;
+}
+
+#icons-top .menu {
+    background-position: 0 0;
+}
+
+#icons-top div:hover {
+    background-position-y: -54px;
+}
+
+#icons-top div:active {
+    background-position-y: -108px;
+}
+
+.message {
+    position: absolute;
+    color: #F8EDC9;
+    text-align: center;
+    width: 100%;
+    text-shadow: 5px 5px #111;
+}
+
+.message.center {
+    font-size: 100px;
+    line-height: 100px;
+}
+
+.message.top {
+    font-size: 49px;
+    line-height: 49px;
+    top: 20px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#morphs {
+    display: none;
+    height: 100px;
+    width: 890px;
+    text-align: center;
+    color: #EEF1AB;
+}
+
+#morphs span {
+    width: 100%;
+    height: 27px;
+    font-size: 27pt;
+    line-height: 27px;
+    background-color: rgba(0, 0, 0, .5);
+    margin-bottom: 5px;
+    display: block;
+    text-align: center;
+}
+
+#morphs div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#morphs div div {
+    position: relative;
+    width: 60px;
+    height: 68px;
+    padding-left: 80px;
+    line-height: 68px;
+    margin-right: 10px;
+    background-color: #3a2b39;
+    font-size: 27px;
+    text-align: left;
+    cursor: pointer;
+}
+
+#morphs div div.active {
+    background-color: #A787A5;
+}
+
+#morphs div div:hover {
+    background-color: #E2D8E2;
+    color: #303030;
+}
+
+#morphs div div span {
+    margin-left: 5px;
+    font-size: 36px;
+}
+
+#morphs div div figure {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 48px;
+    height: 48px;
+    background-image: url('../media/img/morphs.png');
+}
+
+#morphs div div .key {
+    font-size: 18pt;
+    position: absolute;
+    left: 40px;
+    top: 36px;
+    background-color: #000;
+    border: 3px solid #fff;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+}
+
+#ui {
+    position: relative;
+    display: none;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ui #levelselect {
+    display: none;
+    text-align: center;
+}
+
+#ui #levelselect .title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 10px;
+    text-shadow: 5px 5px #111;
+}
+
+#ui #levelselect #menu {
+    width: 600px;
+    margin: 30px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#ui #levelselect #menu .play {
+    display: none;
+}
+
+#ui #levelselect #menu div {
+    font-size: 35px;
+    padding: 20px;
+}
+
+#ui #levelselect #levels {
+    width: 490px;
+    margin: 0 auto;
+    clear: both;
+    height: 270px;
+    padding-top: 10px;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#ui #levelselect #levels .level {
+    background-color: #185666;
+    box-shadow: 5px -5px 0px #103A45;
+    border: 4px solid #fff;
+    padding: 10px;
+    font-size: 22pt;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+#ui #levelselect #levels .level.locked {
+    background-color: #455558;
+    box-shadow: 5px -5px 0px #202728;
+}
+
+#ui #levelselect #levels .level.locked:hover {
+    background-color: #455558;
+    box-shadow: 5px -5px 0px #202728;
+}
+
+#ui #end {
+    color: #fff;
+    top: 260px;
+    display: none;
+    text-align: center;
+}
+
+#ui #end #stats {
+    width: 600px;
+    margin: 0 auto 50px;
+}
+
+#ui #end #stats div {
+    margin-bottom: 10px;
+}
+
+#ui #end #stats span {
+    display: inline-block;
+    font-size: 42px;
+    text-align: right;
+    width: 240px;
+    margin-right: 30px;
+}
+
+#ui #end #stats .right {
+    margin-right: 0px;
+    margin-left: 30px;
+    text-align: left;
+}
+
+#ui #end #btns {
+    width: 660px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#ui #intro {
+    text-align: center;
+    color: #fff;
+}
+
+#ui #intro #title, #ui #intro #slug {
+    text-align: center;
+    color: #fff;
+}
+
+#ui #intro #title {
+    font-size: 80pt;
+    margin-bottom: 5px;
+    text-shadow: 5px 5px #111;
+}
+
+#ui #intro #title span {
+    padding-left: 105px;
+    padding-top: 17px;
+    background-image: url('../media/img/cube.png');
+    background-repeat: no-repeat;
+}
+
+#ui #intro #slug {
+    font-size: 20pt;
+    margin-bottom: 50px;
+}
+
+#ui #intro #slug a {
+    color: #EBC77A;
+    text-decoration: none;
+}
+
+#ui #play, #ui #github {
+    margin: 0 auto;
+    width: 300px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #185666;
+    box-shadow: 5px -5px 0px #103A45;
+    border: 4px solid #fff;
+    padding: 10px;
+    font-size: 40pt;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#ui #play {
+    width: 460px;
+    margin-bottom: 30px;
+}
