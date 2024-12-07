@@ -1,5 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+:root {
+  --dark: #111;
+  --light: #fffaf0;
+  --grey-d: #333;
+  --grey-l: #ccc;
+  --primary: #ff4500;
+  --l-space: 1px;
+  --b-rad: 3px;
+  --transition: 0.3s ease-in all;
+  --max-width: 1120px;
+  --fixed-width: 600px;
+}
+
 body {
   font-family: 'League Spartan', sans-serif;
+  font-weight: 300;
+  background: var(--dark);
+  color: var(--light)
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: capitalize;
+  letter-spacing: var(--l-space);
+}
+
+h1 {
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.btn {
+  font-family: inherit;
+  cursor: pointer;
+  color: var(--light);
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: var(--b-rad);
+  letter-spacing: var(--l-space);
+  padding: 0.375rem 0.75rem;
+  transition: var(--transition);
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: transparent;
+}
+
+.btn-block {
+  width: 100%;
 }
