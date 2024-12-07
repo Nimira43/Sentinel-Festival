@@ -1,8 +1,12 @@
+import { useState } from 'react'
+
 function App() {
+const [items, setItems] = useState([])
+
   return (
-    <div>
+    <section>
       <h1>The Shopping List</h1>
-    </div>
+    </section>
   )
 }
 export default App
