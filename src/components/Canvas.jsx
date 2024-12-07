@@ -1,8 +1,12 @@
-function Canvas() { 
-  return ( 
-    <div>
-      <h1>Canvas</h1>
-    </div> 
-  ) 
-} 
+import { useEffect } from 'react'
+
+function Canvas() {
+  useEffect(() => {
+    const canvas = document.getElementById('canvas')
+    console.log(canvas)
+  }, [])
+
+  return <canvas id="canvas"></canvas>
+}
+
 export default Canvas
