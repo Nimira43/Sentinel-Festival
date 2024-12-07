@@ -88,3 +88,43 @@ ul {
 .btn-block {
   width: 100%;
 }
+
+.form {
+  width: 90vw;
+  max-width: var(--fixed-width);
+  background: var(--light);
+  border-radius: var(--b-rad);
+  padding: 2rem 2.5rem;
+  margin: 3rem auto;
+}
+
+.form-label {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  letter-spacing: var(--l-space);
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--l-space);
+  background: var(--primary);
+  color: var(--light);
+  border: none;
+}
+
+.form-row {
+  margin-bottom: 1rem;
+}
+
+.form-textarea {
+  height: 7rem;
+}
+
+::placeholder {
+  font-family: inherit;
+  color: var(--grey-l);
+}
