@@ -1,4 +1,6 @@
 <template>
-  <h1 class="logo">Sentinel</h1>
+  <RouterLink to="/">Notes</RouterLink>
+  <RouterLink to="/stats" >Stats</RouterLink>
+  <RouterView />
 </template>
 
