@@ -1,4 +1,4 @@
 <template>
-  <h1>Sentinel</h1>
+  <h1 class="logo">Sentinel</h1>
 </template>
 
