@@ -1,0 +1,19 @@
+{
+  "name": "sentinel",
+  "version": "1.0.0",
+  "description": "Task management application",
+  "main": "app.js",
+  "scripts": {
+    "script": "nodemon app.js"
+  },
+  "author": "Nick Rabone",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.10.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
