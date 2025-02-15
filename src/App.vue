@@ -1,4 +1,5 @@
 <template>
+  <NavBar />
   <RouterLink 
     to="/" 
     class="button text-light bg-prime"
@@ -13,6 +14,12 @@
   </RouterLink>
   <RouterView />
 </template>
+
+<script setup>
+  import NavBar from './components/Layout/NavBar.vue'
+
+</script>
+
 
 <style>
 
