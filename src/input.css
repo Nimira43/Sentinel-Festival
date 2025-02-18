@@ -4,9 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 300;
+@layer base {
+  html {
+    font-family: 'Cormorant Garamond', serif;
+  }
 }
 
 .logo {
