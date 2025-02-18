@@ -4,7 +4,7 @@
   "description": "Music festival website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tw:build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "author": "Nick Rabone",
   "license": "ISC",
