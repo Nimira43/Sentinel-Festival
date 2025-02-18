@@ -1,21 +1,11 @@
 {
-  "name": "sentinel",
-  "version": "0.0.0",
-  "private": true,
-  "type": "module",
+  "name": "sentinel-festival",
+  "version": "1.0.0",
+  "description": "Music festival website",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "bulma": "^0.9.3",
-    "vue": "^3.5.13",
-    "vue-router": "^4.5.0"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.1",
-    "vite": "^6.0.11",
-    "vite-plugin-vue-devtools": "^7.7.1"
-  }
+  "author": "Nick Rabone",
+  "license": "ISC"
 }
