@@ -7,5 +7,9 @@
   },
   "author": "Nick",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.8",
+    "tailwindcss": "^4.0.8"
+  }
 }
