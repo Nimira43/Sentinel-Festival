@@ -12,15 +12,17 @@
 
 @layer components {
   .menu-item {
-    @apply relative flex h-full items-center p-4 cursor-pointer font-semibold text-[#fff] hover:bg-[#ff4500] hover:text-[#111] transition-all duration-700;
+    @apply relative flex h-full items-center p-4 uppercase cursor-pointer font-bold text-light hover:bg-main hover:text-dark transition-all duration-700;
   }
 
   .ticket-item {
-    @apply p-4 font-semibold text-[#fff] hover:text-[#111] transition-all duration-700 cursor-pointer;
+    @apply p-4 uppercase font-bold text-light hover:text-dark transition-all duration-700 cursor-pointer;
   }
 }
 
 @theme {
-  --font-logo: 'Fredericka the Great',
-    serif;
+  --font-logo: 'Fredericka the Great', serif;
+  --colour-main: #ff4500;
+  --colour-light: #fffcfa;
+  --colour-dark: #111;
 }
