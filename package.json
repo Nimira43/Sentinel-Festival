@@ -1,0 +1,11 @@
+{
+  "name": "sentinel-festival",
+  "version": "2.0.4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nick",
+  "license": "ISC",
+  "description": ""
+}
