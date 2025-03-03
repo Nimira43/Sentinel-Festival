@@ -26,3 +26,9 @@
   --color-light: #fffcfa;
   --color-dark: #111;
 }
+
+@custom-variant group-open {
+  &:is(:where(.group):is([open], :popover-open, :open) *) {
+    
+  }
+}
