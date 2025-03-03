@@ -7,6 +7,18 @@
   <link rel="stylesheet" href="/dist//output.css">
   <script src="./js/fontawesome.min.js" defer></script>
   <script src="./js/solid.min.js" defer></script>
+  <script>
+    window.onload = () => {
+      const mobileMenuIcon = document.getElementById('mobile-menu-button')
+      mobileMenuIcon.addEventListener('click', () => {
+        if(mobileMenuIcon.classList.contains('open')) {
+          mobileMenuIcon.classList.remove('open')
+        } else {
+          mobileMenuIcon.classList.add('open')
+        }
+      })
+    }
+  </script>
   <title>Sentinel Festival</title>
 </head>
 <body>
@@ -22,7 +34,7 @@
         <div class="block md:hidden ml-auto pr-4 my-auto cursor-pointer">
           <div id="mobile-menu-button" class="group">
             <div 
-              class="w-8 rounded-full bg-light h-1 group-open:text-xl"
+              class="group-open:rotate-45 w-8 rounded-full bg-light h-1 "
             ></div>
             <div 
               class="w-8 rounded-full bg-light h-1 mt-1"
