@@ -28,7 +28,7 @@
 }
 
 @custom-variant group-open {
-  &:is(:where(.group):is([open], :popover-open, :open) *) {
-    
+  &:is(:where(.group):is(.open [open], :popover-open, :open) *) {
+    @slot; 
   }
 }
