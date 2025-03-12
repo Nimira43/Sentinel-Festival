@@ -32,3 +32,11 @@
     @slot; 
   }
 }
+
+@custom-variant peer-open {
+  &:is(:where(.group):is(.open, [open], :popover-open, :open) ~ *) {
+    @slot; 
+  }
+}
+
+
