@@ -12,7 +12,7 @@
 
 @layer components {
   .menu-item {
-    @apply relative flex h-full items-center p-4 uppercase cursor-pointer font-bold text-light hover:bg-main hover:text-dark transition-all duration-700;
+    @apply relative flex h-full items-center p-4 uppercase cursor-pointer font-bold text-light hover:text-dark transition-all duration-700;
   }
 
   .ticket-item {
