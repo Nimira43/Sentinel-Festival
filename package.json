@@ -1,15 +1,19 @@
 {
-  "name": "sentinel-festival",
-  "version": "2.0.4",
+  "name": "sentinel",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "tw:build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Nick",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nimira43/Transcube-React.git"
+  },
+  "author": "Nick Rabone",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "@tailwindcss/cli": "^4.0.8",
-    "tailwindcss": "^4.0.8"
-  }
+  "bugs": {
+    "url": "https://github.com/Nimira43/Transcube-React/issues"
+  },
+  "homepage": "https://github.com/Nimira43/Transcube-React#readme",
+  "description": ""
 }
